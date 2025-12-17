@@ -11,7 +11,7 @@
 
         :root {
             /* Light Mode Colors */
-            --bg-color-light: #F7F8FC;
+            --bg-color-light: #F7F8FC; /* User Pref: F7F8FC */
             --text-dark-light: #1a202c;
             --text-light-light: #4a5568;
             --card-bg-light: #ffffff;
@@ -27,8 +27,8 @@
             --header-scrolled-bg-dark: rgba(26, 32, 44, 0.95);
             
             /* Universal Accent */
-            --primary-accent: #FFA500;
-            --secondary-accent: #1E90FF;
+            --primary-accent: #FFA500; /* User Pref: Primary Button */
+            --secondary-accent: #1E90FF; /* User Pref: Secondary Button */
         }
 
         /* Applying the theme */
@@ -219,7 +219,8 @@
     <!-- Header & Navigation -->
     <header class="fixed top-0 left-0 w-full backdrop-blur-sm z-50">
         <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-gray-800 dark:text-gray-200">GSR.</a>
+            <!-- Updated: Removed the dot -->
+            <a href="#" class="text-2xl font-bold text-gray-800 dark:text-gray-200">GSR</a>
             <div class="flex items-center space-x-6">
                 <div class="hidden md:flex space-x-6 items-center">
                     <a href="#about" class="text-gray-600 dark:text-gray-300 hover:text-orange-500 dark:hover:text-orange-400 transition duration-300">About</a>
@@ -279,7 +280,7 @@
                     <div class="skill-card animate-stagger text-center p-6 bg-gray-50/80 dark:bg-gray-800/80 rounded-lg shadow-sm">
                         <i class="fas fa-code text-4xl text-orange-500 mb-4"></i>
                         <h3 class="font-semibold text-lg">Languages</h3>
-                        <p class="text-gray-600 dark:text-gray-400 mt-2">C, Java (OOPs)</p>
+                        <p class="text-gray-600 dark:text-gray-400 mt-2">C, Python, Java (OOPs)</p>
                     </div>
                      <div class="skill-card animate-stagger text-center p-6 bg-gray-50/80 dark:bg-gray-800/80 rounded-lg shadow-sm">
                         <i class="fas fa-sitemap text-4xl text-blue-500 mb-4"></i>
@@ -294,12 +295,12 @@
                      <div class="skill-card animate-stagger text-center p-6 bg-gray-50/80 dark:bg-gray-800/80 rounded-lg shadow-sm">
                         <i class="fas fa-brain text-4xl text-purple-500 mb-4"></i>
                         <h3 class="font-semibold text-lg">AI & Data Science</h3>
-                        <p class="text-gray-600 dark:text-gray-400 mt-2">Prompt Engineering</p>
+                        <p class="text-gray-600 dark:text-gray-400 mt-2">Machine Learning, RAG, Prompt Engineering</p>
                     </div>
                     <div class="skill-card animate-stagger text-center p-6 bg-gray-50/80 dark:bg-gray-800/80 rounded-lg shadow-sm">
                         <i class="fas fa-gamepad text-4xl text-red-500 mb-4"></i>
                         <h3 class="font-semibold text-lg">Game Development</h3>
-                        <p class="text-gray-600 dark:text-gray-400 mt-2">Unreal Engine 5</p>
+                        <p class="text-gray-600 dark:text-gray-400 mt-2">Unreal Engine 5, WebGL, Godot</p>
                     </div>
                     <div class="skill-card animate-stagger text-center p-6 bg-gray-50/80 dark:bg-gray-800/80 rounded-lg shadow-sm">
                         <i class="fas fa-database text-4xl text-yellow-500 mb-4"></i>
@@ -309,7 +310,7 @@
                     <div class="skill-card animate-stagger text-center p-6 bg-gray-50/80 dark:bg-gray-800/80 rounded-lg shadow-sm">
                         <i class="fas fa-tools text-4xl text-indigo-500 mb-4"></i>
                         <h3 class="font-semibold text-lg">Tools</h3>
-                        <p class="text-gray-600 dark:text-gray-400 mt-2">VS Code, Figma, Canva</p>
+                        <p class="text-gray-600 dark:text-gray-400 mt-2">VS Code, Figma, Canva, Vercel</p>
                     </div>
                      <div class="skill-card animate-stagger text-center p-6 bg-gray-50/80 dark:bg-gray-800/80 rounded-lg shadow-sm">
                         <i class="fas fa-microchip text-4xl text-teal-500 mb-4"></i>
@@ -328,19 +329,136 @@
             <!-- Filter Buttons -->
             <div id="project-filters" class="flex justify-center flex-wrap gap-4 my-8">
                 <button class="filter-btn active px-4 py-2 rounded-full font-semibold text-sm" data-filter="all">All</button>
+                <button class="filter-btn px-4 py-2 rounded-full font-semibold text-sm" data-filter="web">Web</button>
                 <button class="filter-btn px-4 py-2 rounded-full font-semibold text-sm" data-filter="android">Android</button>
+                <button class="filter-btn px-4 py-2 rounded-full font-semibold text-sm" data-filter="game">Game</button>
                 <button class="filter-btn px-4 py-2 rounded-full font-semibold text-sm" data-filter="iot">IoT</button>
-                <button class="filter-btn px-4 py-2 rounded-full font-semibold text-sm" data-filter="java">Java</button>
             </div>
             
             <!-- Project Grid -->
             <div id="project-grid" class="mt-12 space-y-16 md:space-y-24">
-                
+
+                <!-- Jal Sahayak -->
+                <div class="project-card" data-category="web android">
+                    <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                            <div class="md:w-1/2 project-image-container shadow-lg">
+                            <img src="https://res.cloudinary.com/dgpaho6oi/image/upload/v1765987562/Frame_1_zflibz.png" alt="Jal Sahayak" class="w-full h-auto object-cover rounded-md">
+                        </div>
+                        <div class="md:w-1/2 text-center md:text-left">
+                            <h3 class="font-bold text-2xl md:text-3xl mb-3">Jal Sahayak 💧</h3>
+                            <p class="text-gray-600 dark:text-gray-400 text-base mb-4 leading-relaxed">
+                                A mobile-first ecosystem for Gram Panchayats to manage rural water supply. Features offline-first reporting, real-time O&M workflows, and <strong>AI-driven predictive maintenance</strong> to prevent infrastructure failures.
+                            </p>
+                            <div class="flex flex-wrap justify-center md:justify-start gap-2 text-sm mb-6">
+                                    <span class="px-3 py-1 rounded-full bg-green-100 dark:bg-green-900/70 text-green-800 dark:text-green-200">Android</span>
+                                    <span class="px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-900/70 text-blue-800 dark:text-blue-200">Web Dashboard</span>
+                                    <span class="px-3 py-1 rounded-full bg-yellow-100 dark:bg-yellow-900/70 text-yellow-800 dark:text-yellow-200">Firebase</span>
+                                    <span class="px-3 py-1 rounded-full bg-purple-100 dark:bg-purple-900/70 text-purple-800 dark:text-purple-200">Predictive AI</span>
+                            </div>
+                                <a href="#" class="inline-block bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-800 px-5 py-2 rounded-md hover:bg-gray-900 dark:hover:bg-white font-semibold transition duration-300">
+                                <i class="fas fa-eye mr-2"></i>View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UPDATED: Alumni Connect (Web & Android) -->
+                 <div class="project-card" data-category="web android">
+                    <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                         <div class="md:w-1/2 project-image-container shadow-lg">
+                            <img src="https://res.cloudinary.com/dgpaho6oi/image/upload/v1765988389/Screenshot_2025-12-17_214923_njqj1s.png" alt="Alumni Connect" class="w-full h-auto object-cover rounded-md">
+                        </div>
+                        <div class="md:w-1/2 text-center md:text-left">
+                            <h3 class="font-bold text-2xl md:text-3xl mb-3">Alumni Connect 🎓</h3>
+                            <p class="text-gray-600 dark:text-gray-400 text-base mb-4 leading-relaxed">
+                                Digital Platform for centralized alumni data management. Features an admin dashboard, alumni mobile app integration, and event management.
+                            </p>
+                            <div class="flex flex-wrap justify-center md:justify-start gap-2 text-sm mb-6">
+                                 <span class="px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-900/70 text-blue-800 dark:text-blue-200">React.js</span>
+                                 <span class="px-3 py-1 rounded-full bg-green-100 dark:bg-green-900/70 text-green-800 dark:text-green-200">Node.js</span>
+                                 <span class="px-3 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900/70 text-indigo-800 dark:text-indigo-200">PostgreSQL</span>
+                                 <span class="px-3 py-1 rounded-full bg-teal-100 dark:bg-teal-900/70 text-teal-800 dark:text-teal-200">Android</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NEW PROJECT: Neon Maze Escape -->
+                 <div class="project-card" data-category="game web">
+                    <div class="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
+                         <div class="md:w-1/2 project-image-container shadow-lg">
+                            <img src="https://res.cloudinary.com/dgpaho6oi/image/upload/v1765988516/Screenshot_82_zdh3nn.png" alt="Neon Maze Escape" class="w-full h-auto object-cover rounded-md">
+                        </div>
+                        <div class="md:w-1/2 text-center md:text-left">
+                            <h3 class="font-bold text-2xl md:text-3xl mb-3">Neon Maze Escape 🕹️</h3>
+                            <p class="text-gray-600 dark:text-gray-400 text-base mb-4 leading-relaxed">
+                                R3S Interactive proudly presents our first title! A fast-paced, procedurally generated 3D browser game designed for performance. Features dynamic lighting and smart AI chases.
+                            </p>
+                            <div class="flex flex-wrap justify-center md:justify-start gap-2 text-sm mb-6">
+                                 <span class="px-3 py-1 rounded-full bg-purple-100 dark:bg-purple-900/70 text-purple-800 dark:text-purple-200">Three.js</span>
+                                 <span class="px-3 py-1 rounded-full bg-pink-100 dark:bg-pink-900/70 text-pink-800 dark:text-pink-200">WebGL</span>
+                                 <span class="px-3 py-1 rounded-full bg-yellow-100 dark:bg-yellow-900/70 text-yellow-800 dark:text-yellow-200">JavaScript</span>
+                                 <span class="px-3 py-1 rounded-full bg-orange-100 dark:bg-orange-900/70 text-orange-800 dark:text-orange-200">R3S Interactive</span>
+                            </div>
+                             <button class="inline-block bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-800 px-5 py-2 rounded-md hover:bg-gray-900 dark:hover:bg-white font-semibold transition duration-300">
+                                <i class="fas fa-gamepad mr-2"></i>Play Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Prism Garden -->
+                 <div class="project-card" data-category="game">
+                    <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                         <div class="md:w-1/2 project-image-container shadow-lg">
+                            <img src="https://res.cloudinary.com/dgpaho6oi/image/upload/v1765987629/Screenshot_95_f51fih.png" alt="Prism Garden" class="w-full h-auto object-cover rounded-md">
+                        </div>
+                        <div class="md:w-1/2 text-center md:text-left">
+                            <h3 class="font-bold text-2xl md:text-3xl mb-3">Prism Garden</h3>
+                            <p class="text-gray-600 dark:text-gray-400 text-base mb-4 leading-relaxed">
+                                An immersive puzzle game built in HTML5 (WebGL). Restore color to a desolate garden by mastering light refraction and manipulating environmental elements.
+                            </p>
+                            <div class="flex flex-wrap justify-center md:justify-start gap-2 text-sm mb-6">
+                                 <span class="px-3 py-1 rounded-full bg-red-100 dark:bg-red-900/70 text-red-800 dark:text-red-200">Game</span>
+                                 <span class="px-3 py-1 rounded-full bg-red-100 dark:bg-red-900/70 text-red-800 dark:text-red-200">WebGL</span>
+                                 <span class="px-3 py-1 rounded-full bg-orange-100 dark:bg-orange-900/70 text-orange-800 dark:text-orange-200">R3S Interactive</span>
+                            </div>
+                             <a href="https://prism-garden.vercel.app/" class="inline-block bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-800 px-5 py-2 rounded-md hover:bg-gray-900 dark:hover:bg-white font-semibold transition duration-300">
+                                <i class="fas fa-gamepad mr-2"></i>Play Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Document Analyzer -->
+                <div class="project-card" data-category="web">
+                    <div class="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
+                         <div class="md:w-1/2 project-image-container shadow-lg">
+                            <img src="https://res.cloudinary.com/dgpaho6oi/image/upload/v1765988655/Screenshot_2025-12-17_215405_qpghu0.png" alt="Document Analyzer" class="w-full h-auto object-cover rounded-md">
+                        </div>
+                        <div class="md:w-1/2 text-center md:text-left">
+                            <h3 class="font-bold text-2xl md:text-3xl mb-3">Document Analyzer 📄</h3>
+                            <p class="text-gray-600 dark:text-gray-400 text-base mb-4 leading-relaxed">
+                                Instant insights from PDFs, Word docs, and images. Powered by the Gemini API for summarization and Q&A with client-side privacy.
+                            </p>
+                            <div class="flex flex-wrap justify-center md:justify-start gap-2 text-sm mb-6">
+                                 <span class="px-3 py-1 rounded-full bg-purple-100 dark:bg-purple-900/70 text-purple-800 dark:text-purple-200">Gemini API</span>
+                                 <span class="px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-900/70 text-blue-800 dark:text-blue-200">Tailwind CSS</span>
+                                 <span class="px-3 py-1 rounded-full bg-yellow-100 dark:bg-yellow-900/70 text-yellow-800 dark:text-yellow-200">Vercel</span>
+                            </div>
+                             <a href="https://github.com/gsekharreddy/PDF-Analyser" target="_blank" class="inline-block bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-800 px-5 py-2 rounded-md hover:bg-gray-900 dark:hover:bg-white font-semibold transition duration-300">
+                                <i class="fab fa-github mr-2"></i>View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Project 1: List Sync -->
                 <div class="project-card" data-category="android">
                     <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
                         <div class="md:w-1/2 project-image-container shadow-lg">
-                             <img src="https://placehold.co/600x400/55CAFF/FFFFFF?text=List+Sync" alt="List Sync App" class="w-full h-auto object-cover rounded-md">
+                             <img src="https://res.cloudinary.com/dgpaho6oi/image/upload/v1765990183/Frame_2_tbds6y.png" alt="List Sync App" class="w-full h-auto object-cover rounded-md">
                         </div>
                         <div class="md:w-1/2 text-center md:text-left">
                             <h3 class="font-bold text-2xl md:text-3xl mb-3">List Sync: Smart To-Do List</h3>
@@ -362,7 +480,7 @@
                 <div class="project-card" data-category="android">
                     <div class="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
                          <div class="md:w-1/2 project-image-container shadow-lg">
-                            <img src="https://placehold.co/600x400/1E90FF/FFFFFF?text=Task+Manager" alt="Task Manager Pro App" class="w-full h-auto object-cover rounded-md">
+                            <img src="https://res.cloudinary.com/dgpaho6oi/image/upload/v1765990590/Frame_3_zdnwts.png" alt="Task Manager Pro App" class="w-full h-auto object-cover rounded-md">
                         </div>
                         <div class="md:w-1/2 text-center md:text-left">
                             <h3 class="font-bold text-2xl md:text-3xl mb-3">Task Manager Pro</h3>
@@ -383,7 +501,7 @@
                  <div class="project-card" data-category="iot">
                     <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
                          <div class="md:w-1/2 project-image-container shadow-lg">
-                            <img src="https://placehold.co/600x400/FFA500/FFFFFF?text=Soil+Monitor" alt="Soil Monitoring System" class="w-full h-auto object-cover rounded-md">
+                            <img src="https://res.cloudinary.com/dgpaho6oi/image/upload/v1765990994/Frame_4_rijxjs.png" alt="Soil Monitoring System" class="w-full h-auto object-cover rounded-md">
                         </div>
                         <div class="md:w-1/2 text-center md:text-left">
                             <h3 class="font-bold text-2xl md:text-3xl mb-3">Soil Monitoring System</h3>
@@ -393,8 +511,6 @@
                                  <span class="px-3 py-1 rounded-full bg-red-100 dark:bg-red-900/70 text-red-800 dark:text-red-200">ESP-32</span>
                                  <span class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700/70 text-gray-800 dark:text-gray-200">Hardware</span>
                             </div>
-
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -538,7 +654,7 @@
 
             // --- 4. HERO SECTION TYPING EFFECT ---
             const typingText = document.getElementById('typing-text');
-            const words = ["Android Developer", "Problem Solver", "Tech Enthusiast", "Game Developer"];
+            const words = ["Android Developer", "Problem Solver", "Tech Enthusiast", "Game Developer", "Person who's energitic to learn new things", "Reverse Engineer", "ML Enthusiast"];
             let wordIndex = 0; let charIndex = 0; let isDeleting = false;
 
             function type() {
@@ -589,7 +705,9 @@
                     const filter = btn.dataset.filter;
 
                     projectCards.forEach(card => {
-                        const isVisible = filter === 'all' || card.dataset.category === filter;
+                        // UPDATED: Allow multi-category filtering (e.g. "web android")
+                        const categories = card.dataset.category.split(' ');
+                        const isVisible = filter === 'all' || categories.includes(filter);
                         card.style.display = isVisible ? 'block' : 'none';
                     });
                 });
@@ -619,4 +737,3 @@
     </script>
 </body>
 </html>
-
