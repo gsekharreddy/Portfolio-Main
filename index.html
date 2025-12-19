@@ -71,11 +71,13 @@
         /* Hero Section Styling */
         #hero {
             position: relative;
-            height: 100vh;
+            min-height: 100vh; /* Changed to min-height for better mobile scaling */
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
+            padding-top: 80px; /* Prevent header overlap on small screens */
+            padding-bottom: 40px;
         }
 
         /* UPDATED: Particles JS is now a global background */
@@ -96,7 +98,7 @@
 
         .hero-content h1 {
             font-weight: 900;
-            font-size: 4rem; /* Responsive font size */
+            font-size: 3.5rem; /* Slightly smaller base for better mobile fit */
         }
         .dark .hero-content h1 { color: var(--text-dark-dark); }
 
@@ -245,9 +247,16 @@
                 <p class="typing-effect mt-4">
                     I'm a <span id="typing-text"></span><span class="typing-cursor"></span>
                 </p>
-                <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <a href="#projects" class="bg-orange-500 text-white px-8 py-3 rounded-lg font-semibold text-lg hover:bg-orange-600 transition duration-300">View My Work</a>
-                    <a href="https://gsekharreddy-portfolio-gamified.vercel.app/#hero" target="_blank" class="border-2 border-orange-500 text-orange-500 px-8 py-3 rounded-lg font-semibold text-lg hover:bg-orange-500 hover:text-white transition duration-300">
+                <!-- Updated Buttons Container -->
+                <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 flex-wrap">
+                    <a href="#projects" class="bg-orange-500 text-white px-8 py-3 rounded-lg font-semibold text-lg hover:bg-orange-600 transition duration-300 w-full sm:w-auto">View My Work</a>
+                    
+                    <!-- New Resume Button -->
+                    <a href="https://drive.google.com/file/d/1b5TRH-0xcwPSW0i9ctJppedEzMSscMwD/view?usp=sharing" target="_blank" class="bg-blue-500 text-white px-8 py-3 rounded-lg font-semibold text-lg hover:bg-blue-600 transition duration-300 w-full sm:w-auto">
+                        <i class="fas fa-file-alt mr-2"></i>View Resume
+                    </a>
+
+                    <a href="https://gsekharreddy-portfolio-gamified.vercel.app/#hero" target="_blank" class="border-2 border-orange-500 text-orange-500 px-8 py-3 rounded-lg font-semibold text-lg hover:bg-orange-500 hover:text-white transition duration-300 w-full sm:w-auto">
                         <i class="fas fa-gamepad mr-2"></i> Play My Portfolio
                     </a>
                 </div>
@@ -351,6 +360,7 @@
                             <p class="text-gray-600 dark:text-gray-400 text-base mb-4 leading-relaxed">
                                 A mobile-first ecosystem for Gram Panchayats to manage rural water supply. Features offline-first reporting, real-time O&M workflows, and <strong>AI-driven predictive maintenance</strong> to prevent infrastructure failures.
                             </p>
+                            
                             <div class="flex flex-wrap justify-center md:justify-start gap-2 text-sm mb-6">
                                     <span class="px-3 py-1 rounded-full bg-green-100 dark:bg-green-900/70 text-green-800 dark:text-green-200">Android</span>
                                     <span class="px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-900/70 text-blue-800 dark:text-blue-200">Web Dashboard</span>
@@ -375,6 +385,7 @@
                             <p class="text-gray-600 dark:text-gray-400 text-base mb-4 leading-relaxed">
                                 Digital Platform for centralized alumni data management. Features an admin dashboard, alumni mobile app integration, and event management.
                             </p>
+                            
                             <div class="flex flex-wrap justify-center md:justify-start gap-2 text-sm mb-6">
                                  <span class="px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-900/70 text-blue-800 dark:text-blue-200">React.js</span>
                                  <span class="px-3 py-1 rounded-full bg-green-100 dark:bg-green-900/70 text-green-800 dark:text-green-200">Node.js</span>
@@ -397,6 +408,7 @@
                             <p class="text-gray-600 dark:text-gray-400 text-base mb-4 leading-relaxed">
                                 R3S Interactive proudly presents our first title! A fast-paced, procedurally generated 3D browser game designed for performance. Features dynamic lighting and smart AI chases.
                             </p>
+                            
                             <div class="flex flex-wrap justify-center md:justify-start gap-2 text-sm mb-6">
                                  <span class="px-3 py-1 rounded-full bg-purple-100 dark:bg-purple-900/70 text-purple-800 dark:text-purple-200">Three.js</span>
                                  <span class="px-3 py-1 rounded-full bg-pink-100 dark:bg-pink-900/70 text-pink-800 dark:text-pink-200">WebGL</span>
@@ -421,6 +433,7 @@
                             <p class="text-gray-600 dark:text-gray-400 text-base mb-4 leading-relaxed">
                                 An immersive puzzle game built in HTML5 (WebGL). Restore color to a desolate garden by mastering light refraction and manipulating environmental elements.
                             </p>
+                            
                             <div class="flex flex-wrap justify-center md:justify-start gap-2 text-sm mb-6">
                                  <span class="px-3 py-1 rounded-full bg-red-100 dark:bg-red-900/70 text-red-800 dark:text-red-200">Game</span>
                                  <span class="px-3 py-1 rounded-full bg-red-100 dark:bg-red-900/70 text-red-800 dark:text-red-200">WebGL</span>
@@ -444,6 +457,7 @@
                             <p class="text-gray-600 dark:text-gray-400 text-base mb-4 leading-relaxed">
                                 Instant insights from PDFs, Word docs, and images. Powered by the Gemini API for summarization and Q&A with client-side privacy.
                             </p>
+                            
                             <div class="flex flex-wrap justify-center md:justify-start gap-2 text-sm mb-6">
                                  <span class="px-3 py-1 rounded-full bg-purple-100 dark:bg-purple-900/70 text-purple-800 dark:text-purple-200">Gemini API</span>
                                  <span class="px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-900/70 text-blue-800 dark:text-blue-200">Tailwind CSS</span>
