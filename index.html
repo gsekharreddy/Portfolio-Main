@@ -211,6 +211,14 @@
             transform: scale(1.05);
         }
         
+        /* Specific Styles for Research Cards */
+        .research-card {
+            border-left: 4px solid var(--primary-accent);
+        }
+        .dark .research-card {
+            background-color: rgba(45, 55, 72, 0.5);
+        }
+        
     </style>
 </head>
 <body class="antialiased">
@@ -228,6 +236,7 @@
                     <a href="#about" class="text-gray-600 dark:text-gray-300 hover:text-orange-500 dark:hover:text-orange-400 transition duration-300">About</a>
                     <a href="#skills" class="text-gray-600 dark:text-gray-300 hover:text-orange-500 dark:hover:text-orange-400 transition duration-300">Skills</a>
                     <a href="#projects" class="text-gray-600 dark:text-gray-300 hover:text-orange-500 dark:hover:text-orange-400 transition duration-300">Projects</a>
+                     <a href="#research" class="text-gray-600 dark:text-gray-300 hover:text-orange-500 dark:hover:text-orange-400 transition duration-300">Research</a>
                     <a href="#education" class="text-gray-600 dark:text-gray-300 hover:text-orange-500 dark:hover:text-orange-400 transition duration-300">Education</a>
                     <a href="#contact" class="bg-orange-500 text-white px-4 py-2 rounded-md hover:bg-orange-600 transition duration-300">Contact</a>
                 </div>
@@ -531,6 +540,102 @@
                     </div>
                 </div>
 
+            </div>
+        </section>
+        
+        <!-- NEW SECTION: Research & Publications -->
+        <section id="research" class="section container mx-auto">
+            <div class="text-center">
+                <h2 class="section-title text-gray-800 dark:text-gray-200">Research & Publications</h2>
+                <p class="max-w-2xl mx-auto mt-4 text-gray-600 dark:text-gray-400">
+                    Exploring the frontiers of mobile security and AI agents.
+                </p>
+            </div>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Research Paper 1 -->
+                <div class="research-card bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <i class="fas fa-shield-alt text-3xl text-orange-500"></i>
+                        <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-yellow-200 dark:text-yellow-900">Work in Progress</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-gray-200">Secure & Intelligent Data Sharing Framework</h3>
+                    <p class="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-4">For Android Applications Using Enhanced Content Provider Architecture</p>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6 text-sm">
+                        Developing a novel architecture to enhance security protocols in Android's Content Providers, aiming to prevent data leakage in inter-app communication.
+                    </p>
+                    <a href="secure-data-sharing-framework.html" class="pointer-events-none inline-block bg-gray-300 dark:bg-gray-600 text-gray-500 dark:text-gray-400 px-5 py-2 rounded-md font-semibold cursor-not-allowed">
+                        <i class="fas fa-book-reader mr-2"></i>Read Paper
+                    </a>
+                </div>
+
+                <!-- Research Paper 2 -->
+                <div class="research-card bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <i class="fas fa-robot text-3xl text-blue-500"></i>
+                         <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-yellow-200 dark:text-yellow-900">Work in Progress</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-gray-200">Smart AI Assistant Concept</h3>
+                    <p class="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-4">Using OCR, LLM and NLP</p>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6 text-sm">
+                        A conceptual model for a next-gen assistant that combines on-device OCR with Large Language Models to provide context-aware, real-time assistance.
+                    </p>
+                    <a href="smart-ai-assistant.html" class="pointer-events-none inline-block bg-gray-300 dark:bg-gray-600 text-gray-500 dark:text-gray-400 px-5 py-2 rounded-md font-semibold cursor-not-allowed">
+                        <i class="fas fa-book-reader mr-2"></i>Read Paper
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEW SECTION: Achievements & Certifications -->
+        <section id="achievements" class="section bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm">
+            <div class="container mx-auto">
+                <div class="text-center">
+                    <h2 class="section-title text-gray-800 dark:text-gray-200">Achievements & Certifications</h2>
+                </div>
+                
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Item 1: Google Ambassador -->
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border-l-4 border-green-500 hover:transform hover:-translate-y-1 transition duration-300">
+                        <h3 class="font-bold text-lg text-gray-800 dark:text-gray-200 mb-1">Google Student Ambassador</h3>
+                        <p class="text-sm text-green-600 dark:text-green-400 font-semibold mb-2">2025</p>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Selected to represent Google Gemini technologies and foster a developer community on campus.</p>
+                    </div>
+
+                    <!-- Item 2: Scholarship 1 -->
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border-l-4 border-yellow-500 hover:transform hover:-translate-y-1 transition duration-300">
+                        <h3 class="font-bold text-lg text-gray-800 dark:text-gray-200 mb-1">Scholarship of Achievement</h3>
+                        <p class="text-sm text-yellow-600 dark:text-yellow-400 font-semibold mb-2">Govt. of Odisha | 2022</p>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Awarded ₹80,000 for securing 1st division in Matriculation.</p>
+                    </div>
+
+                    <!-- Item 3: Scholarship 2 -->
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border-l-4 border-yellow-500 hover:transform hover:-translate-y-1 transition duration-300">
+                        <h3 class="font-bold text-lg text-gray-800 dark:text-gray-200 mb-1">Post Matric Scholarship</h3>
+                        <p class="text-sm text-yellow-600 dark:text-yellow-400 font-semibold mb-2">Govt. of Odisha | 2021</p>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Awarded ₹60,000 for academic excellence.</p>
+                    </div>
+
+                    <!-- Item 4: Certification -->
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border-l-4 border-blue-500 hover:transform hover:-translate-y-1 transition duration-300">
+                        <h3 class="font-bold text-lg text-gray-800 dark:text-gray-200 mb-1">Android Development</h3>
+                        <p class="text-sm text-blue-600 dark:text-blue-400 font-semibold mb-2">NIST University | 2025</p>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Completed intensive course on modern Android development practices.</p>
+                    </div>
+                    
+                    <!-- Item 5: AI for Youth -->
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border-l-4 border-purple-500 hover:transform hover:-translate-y-1 transition duration-300">
+                        <h3 class="font-bold text-lg text-gray-800 dark:text-gray-200 mb-1">AI for Youth</h3>
+                        <p class="text-sm text-purple-600 dark:text-purple-400 font-semibold mb-2">Govt. of India | 2021</p>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Certified in Introduction to AI and potential applications on a national level.</p>
+                    </div>
+
+                     <!-- Item 6: UI/UX -->
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border-l-4 border-pink-500 hover:transform hover:-translate-y-1 transition duration-300">
+                        <h3 class="font-bold text-lg text-gray-800 dark:text-gray-200 mb-1">UI/UX Development</h3>
+                        <p class="text-sm text-pink-600 dark:text-pink-400 font-semibold mb-2">Udemy | 2024</p>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Comprehensive course on designing user-centric interfaces.</p>
+                    </div>
+                </div>
             </div>
         </section>
         
